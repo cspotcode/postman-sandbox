@@ -17,7 +17,8 @@ paths:
           description: ID of the user
           required: true
           schema:
-            type: string
+            type: integer
+            format: int32
       responses:
         '200':
           description: 'Sample response: Details about a user by ID'
