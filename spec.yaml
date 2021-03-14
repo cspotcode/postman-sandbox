@@ -7,18 +7,17 @@ servers:
 paths:
   /different2:
     get:
-      summary: 'Sample endpoint: Returns details about a particular user, edited manually to see if collection syncs'
-      operationId: listUser
+      summary: 'Sample endpoint: Returns details about a particular user'
+      operationId: listUsers
       tags:
         - user
       parameters:
-        - name: id
+        - name: uuid
           in: query
           description: ID of the user
           required: true
           schema:
-            type: integer
-            format: int32
+            type: string
       responses:
         '200':
           description: 'Sample response: Details about a user by ID'
